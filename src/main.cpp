@@ -833,17 +833,17 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 100 * COIN; // glspoints: 100 (Litecoin: 50)
+    int64 nSubsidy = 33.02 * COIN; // glspoints: 33.02 (Litecoin: 50)
 
-    // Subsidy is cut in half every 800000 blocks
-    nSubsidy >>= (nHeight / 800000); // glspoints: 800k blocks in ~1 years
+    // Subsidy is cut in half every 330200 blocks
+    nSubsidy >>= (nHeight / 330200); // glspoints: 330.2K blocks in ~3.5 years
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan_Version1 = 1 * 6 * 60 * 60; // glspoints: 6 hours (Litecoin: 3.5 days)
+static const int64 nTargetTimespan_Version1 = 6 * 60 * 60; // glspoints: 6 hours (Litecoin: 3.5 days)
 static const int64 nTargetSpacing = 330.2; // glspoints: 180 seconds (~1/4x Litecoin: 2.5 minutes)
-static const int64 nInterval_Version1 = nTargetTimespan_Version1 / nTargetSpacing; // glspoints: 90 blocks
+static const int64 nInterval_Version1 = nTargetTimespan_Version1 / nTargetSpacing; // glspoints: 65 blocks
 
 static const int64 nHeight_Version2 = 208440;
 static const int64 nInterval_Version2 = 15;
@@ -1994,7 +1994,7 @@ bool LoadBlockIndex(bool fAllowNew)
         pchMessageStart[1] = 0xc0;
         pchMessageStart[2] = 0x5a;
         pchMessageStart[3] = 0xf2;
-        hashGenesisBlock = uint256("0x9b7bc86236c34b5e3a39367c036b7fe8807a966c22a7a1f0da2a198a27e03731");
+        hashGenesisBlock = uint256("0xfcfc7421a9b967ea8115aecbb2ddbcee762f67b940fffb7e3a3f9c869aa54fe6");
     }
 
     //
@@ -2015,7 +2015,7 @@ bool LoadBlockIndex(bool fAllowNew)
   
         // Genesis Block:
 		// block.nTime = 1371488396 
-		// block.nNonce = 1000112548
+		// block.nNonce = 1000624266
 		// block.GetHash = 09c7781c9df90708e278c35d38ea5c9041d7ecfcdd1c56ba67274b7cff3e1cea
 		// CBlock(hash=09c7781c9df90708e278, PoW=00000dd664a0d447b6b3, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=730f0c8ddc, nTime=1371488396, nBits=1e0ffff0, nNonce=1000112548, vtx=1)
 		//   CTransaction(hash=730f0c8ddc, ver=2, vin.size=1, vout.size=1, nLockTime=0, strTxComment=text:glspoints genesis block)
@@ -2039,12 +2039,12 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1395363413; // 3/20 20:56ish 
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 1000112548;
+        block.nNonce   = 1000624266;
 
         if (fTestNet)
         {
             block.nTime    = 1395363413;
-            block.nNonce   = 1000580675;
+            block.nNonce   = 1000624266;
         }
 
         //// debug print
