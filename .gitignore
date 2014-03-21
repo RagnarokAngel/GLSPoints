@@ -1,7 +1,7 @@
 src/*.exe
-src/florincoin
-src/florincoind
-src/test_florincoin
+src/glspoints
+src/glspointsd
+src/test_glspoints
 src/build.h
 .*.swp
 *.*~*
@@ -11,11 +11,11 @@ src/build.h
 *.o
 *.patch
 .bitcoin
-.florincoin
+.glspoints
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-florincoin-qt
+glspoints-qt
 #resources cpp
 qrc_*.cpp
 #qt creator

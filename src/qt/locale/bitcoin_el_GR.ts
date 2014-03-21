@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About Florincoin</source>
-        <translation>Σχετικα:Florincoin</translation>
+        <source>About glspoints</source>
+        <translation>Σχετικα:glspoints</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="53"/>
-        <source>&lt;b&gt;Florincoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Florincoin&lt;/b&gt;έκδοση</translation>
+        <source>&lt;b&gt;glspoints&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;glspoints&lt;/b&gt;έκδοση</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="97"/>
@@ -39,8 +39,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
-        <source>These are your Florincoin addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Αυτές είναι οι διευθύνσεις Florincoin για την παραλαβή πληρωμών. Μπορεί να θέλετε να δίνετε διαφορετική διεύθυνση σε κάθε αποστολέα έτσι ώστε να μπορείτε να παρακολουθείτε ποιος σας πληρώνει.</translation>
+        <source>These are your glspoints addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Αυτές είναι οι διευθύνσεις glspoints για την παραλαβή πληρωμών. Μπορεί να θέλετε να δίνετε διαφορετική διεύθυνση σε κάθε αποστολέα έτσι ώστε να μπορείτε να παρακολουθείτε ποιος σας πληρώνει.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="36"/>
@@ -223,8 +223,8 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="111"/>
-        <source>Florincoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>Το Florincoin θα κλεισει τώρα για να τελειώσει την διαδικασία κρυπτογραφησης. Θυμησου ότι κρυπτογραφώντας το πορτοφολι σου δεν μπορείς να προστατέψεις πλήρως τα bitcoins σου από κλοπή στην περίπτωση όπου μολυνθεί ο υπολογιστής σου με κακόβουλο λογισμικο.</translation>
+        <source>glspoints will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation>Το glspoints θα κλεισει τώρα για να τελειώσει την διαδικασία κρυπτογραφησης. Θυμησου ότι κρυπτογραφώντας το πορτοφολι σου δεν μπορείς να προστατέψεις πλήρως τα bitcoins σου από κλοπή στην περίπτωση όπου μολυνθεί ο υπολογιστής σου με κακόβουλο λογισμικο.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="207"/>
@@ -278,8 +278,8 @@ Are you sure you wish to encrypt your wallet?</source>
     <name>BitcoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="73"/>
-        <source>Florincoin Wallet</source>
-        <translation>Πορτοφολι Florincoin</translation>
+        <source>glspoints Wallet</source>
+        <translation>Πορτοφολι glspoints</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="215"/>
@@ -288,8 +288,8 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="248"/>
-        <source>Show/Hide &amp;Florincoin</source>
-        <translation>Εμφάνισε/Κρύψε &amp;Florincoin</translation>
+        <source>Show/Hide &amp;glspoints</source>
+        <translation>Εμφάνισε/Κρύψε &amp;glspoints</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="515"/>
@@ -363,8 +363,8 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="240"/>
-        <source>Show information about Florincoin</source>
-        <translation>Εμφάνισε πληροφορίες σχετικά με το Florincoin</translation>
+        <source>Show information about glspoints</source>
+        <translation>Εμφάνισε πληροφορίες σχετικά με το glspoints</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="242"/>
@@ -413,18 +413,18 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="210"/>
-        <source>Send coins to a Florincoin address</source>
+        <source>Send coins to a glspoints address</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="246"/>
-        <source>Modify configuration options for Florincoin</source>
+        <source>Modify configuration options for glspoints</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="249"/>
-        <source>Show or hide the Florincoin window</source>
-        <translation>Εμφάνισε ή κρύψε το παράθυρο Florincoin</translation>
+        <source>Show or hide the glspoints window</source>
+        <translation>Εμφάνισε ή κρύψε το παράθυρο glspoints</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="251"/>
@@ -500,13 +500,13 @@ Are you sure you wish to encrypt your wallet?</source>
     <message>
         <location filename="../bitcoingui.cpp" line="343"/>
         <location filename="../bitcoingui.cpp" line="399"/>
-        <source>Florincoin client</source>
-        <translation>Πελάτης Florincoin</translation>
+        <source>glspoints client</source>
+        <translation>Πελάτης glspoints</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="492"/>
-        <source>%n active connection(s) to Florincoin network</source>
-        <translation><numerusform>%n ενεργή σύνδεση στο δίκτυο Florincoin</numerusform><numerusform>%n ενεργές συνδέσεις στο δίκτυο Βitcoin</numerusform></translation>
+        <source>%n active connection(s) to glspoints network</source>
+        <translation><numerusform>%n ενεργή σύνδεση στο δίκτυο glspoints</numerusform><numerusform>%n ενεργές συνδέσεις στο δίκτυο Βitcoin</numerusform></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="540"/>
@@ -615,7 +615,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="112"/>
-        <source>A fatal error occured. Florincoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occured. glspoints can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -641,7 +641,7 @@ Address: %4
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="263"/>
-        <source>The user interface language can be set here. This setting will only take effect after restarting Florincoin.</source>
+        <source>The user interface language can be set here. This setting will only take effect after restarting glspoints.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -666,7 +666,7 @@ Address: %4
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="285"/>
-        <source>Whether to show Florincoin addresses in the transaction list</source>
+        <source>Whether to show glspoints addresses in the transaction list</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -676,7 +676,7 @@ Address: %4
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="303"/>
-        <source>This setting will take effect after restarting Florincoin.</source>
+        <source>This setting will take effect after restarting glspoints.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -734,7 +734,7 @@ Address: %4
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="96"/>
-        <source>The entered address &quot;%1&quot; is not a valid Florincoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid glspoints address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -753,7 +753,7 @@ Address: %4
     <message>
         <location filename="../bitcoin.cpp" line="133"/>
         <location filename="../bitcoin.cpp" line="143"/>
-        <source>Florincoin-Qt</source>
+        <source>glspoints-Qt</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -816,12 +816,12 @@ Address: %4
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="222"/>
-        <source>&amp;Start Florincoin on system login</source>
+        <source>&amp;Start glspoints on system login</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
-        <source>Automatically start Florincoin after logging in to the system</source>
+        <source>Automatically start glspoints after logging in to the system</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -909,8 +909,8 @@ Address: %4
     </message>
     <message>
         <location filename="../messagepage.cpp" line="30"/>
-        <source>Enter a Florincoin address (e.g. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</source>
-        <translation>Εισάγετε μια διεύθυνση Florincoin (π.χ. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</translation>
+        <source>Enter a glspoints address (e.g. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</source>
+        <translation>Εισάγετε μια διεύθυνση glspoints (π.χ. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</translation>
     </message>
     <message>
         <location filename="../messagepage.cpp" line="83"/>
@@ -955,8 +955,8 @@ Address: %4
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="348"/>
-        <source>Automatically open the Florincoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Αυτόματο άνοιγμα των θυρών Florincoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
+        <source>Automatically open the glspoints client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Αυτόματο άνοιγμα των θυρών glspoints στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="351"/>
@@ -966,7 +966,7 @@ Address: %4
     <message>
         <location filename="../optionsdialog.cpp" line="352"/>
         <source>Connect to the Bitcon network through a SOCKS4 proxy (e.g. when connecting through Tor)</source>
-        <translation>Σύνδεση στο Florincoin δίκτυο μέσω διαμεσολαβητή SOCKS4 (π.χ. για σύνδεση μέσω Tor)</translation>
+        <translation>Σύνδεση στο glspoints δίκτυο μέσω διαμεσολαβητή SOCKS4 (π.χ. για σύνδεση μέσω Tor)</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="357"/>
@@ -1007,7 +1007,7 @@ Address: %4
     <message>
         <location filename="../forms/overviewpage.ui" line="47"/>
         <location filename="../forms/overviewpage.ui" line="204"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Florincoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the glspoints network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1081,8 +1081,8 @@ Address: %4
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="105"/>
-        <source>FLO</source>
-        <translation>FLO</translation>
+        <source>GLSP</source>
+        <translation>GLSP</translation>
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="121"/>
@@ -1124,7 +1124,7 @@ Address: %4
     <name>RPCConsole</name>
     <message>
         <location filename="../forms/rpcconsole.ui" line="14"/>
-        <source>Florincoin debug window</source>
+        <source>glspoints debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1207,7 +1207,7 @@ Address: %4
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="299"/>
-        <source>Open the Florincoin debug logfile from the current data directory. This can take a few seconds for large logfiles.</source>
+        <source>Open the glspoints debug logfile from the current data directory. This can take a few seconds for large logfiles.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1232,7 +1232,7 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="212"/>
-        <source>Welcome to the Florincoin RPC console.</source>
+        <source>Welcome to the glspoints RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1287,8 +1287,8 @@ Address: %4
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="113"/>
-        <source>123.456 FLO</source>
-        <translation>123,456 FLO</translation>
+        <source>123.456 GLSP</source>
+        <translation>123,456 GLSP</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="144"/>
@@ -1417,8 +1417,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="26"/>
-        <source>Enter a Florincoin address (e.g. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</source>
-        <translation>Εισάγετε μια διεύθυνση Florincoin (π.χ. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</translation>
+        <source>Enter a glspoints address (e.g. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</source>
+        <translation>Εισάγετε μια διεύθυνση glspoints (π.χ. FShM3UpgFZnXzJ5zux1AWQvAE36rFJKMs7)</translation>
     </message>
 </context>
 <context>
@@ -1866,12 +1866,12 @@ Address: %4
     </message>
     <message>
         <location filename="../forms/verifymessagedialog.ui" line="20"/>
-        <source>Enter the message and signature below (be careful to correctly copy newlines, spaces, tabs and other invisible characters) to obtain the Florincoin address used to sign the message.</source>
+        <source>Enter the message and signature below (be careful to correctly copy newlines, spaces, tabs and other invisible characters) to obtain the glspoints address used to sign the message.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../forms/verifymessagedialog.ui" line="62"/>
-        <source>Verify a message and obtain the Florincoin address used to sign the message</source>
+        <source>Verify a message and obtain the glspoints address used to sign the message</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1901,7 +1901,7 @@ Address: %4
     </message>
     <message>
         <location filename="../verifymessagedialog.cpp" line="28"/>
-        <source>Enter Florincoin signature</source>
+        <source>Enter glspoints signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1976,8 +1976,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="43"/>
-        <source>Florincoin version</source>
-        <translation>Έκδοση Florincoin</translation>
+        <source>glspoints version</source>
+        <translation>Έκδοση glspoints</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="44"/>
@@ -2243,13 +2243,13 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="121"/>
-        <source>Cannot obtain a lock on data directory %s.  Florincoin is probably already running.</source>
-        <translation>Αδυναμία κλειδώματος του φακέλου δεδομένων %s. Πιθανώς το Florincoin να είναι ήδη ενεργό.</translation>
+        <source>Cannot obtain a lock on data directory %s.  glspoints is probably already running.</source>
+        <translation>Αδυναμία κλειδώματος του φακέλου δεδομένων %s. Πιθανώς το glspoints να είναι ήδη ενεργό.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="48"/>
-        <source>Florincoin</source>
-        <translation>Florincoin</translation>
+        <source>glspoints</source>
+        <translation>glspoints</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="30"/>
@@ -2298,13 +2298,13 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="135"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Florincoin</source>
-        <translation>Σφάλμα φόρτωσης wallet.dat: Το Πορτοφόλι απαιτεί μια νεότερη έκδοση του Florincoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of glspoints</source>
+        <translation>Σφάλμα φόρτωσης wallet.dat: Το Πορτοφόλι απαιτεί μια νεότερη έκδοση του glspoints</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="136"/>
-        <source>Wallet needed to be rewritten: restart Florincoin to complete</source>
-        <translation>Απαιτείται η επανεγγραφή του Πορτοφολιού, η οποία θα ολοκληρωθεί στην επανεκκίνηση του Florincoin</translation>
+        <source>Wallet needed to be rewritten: restart glspoints to complete</source>
+        <translation>Απαιτείται η επανεγγραφή του Πορτοφολιού, η οποία θα ολοκληρωθεί στην επανεκκίνηση του glspoints</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="137"/>
@@ -2404,7 +2404,7 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="28"/>
-        <source>Unable to bind to %s on this computer. Florincoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. glspoints is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2514,8 +2514,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="25"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong Florincoin will not work properly.</source>
-        <translation>Προειδοποίηση: Παρακαλώ βεβαιωθείτε πως η ημερομηνία κι ώρα του συστήματός σας είναι σωστές. Αν το ρολόι του υπολογιστή σας πάει λάθος, ενδέχεται να μη λειτουργεί σωστά το Florincoin.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong glspoints will not work properly.</source>
+        <translation>Προειδοποίηση: Παρακαλώ βεβαιωθείτε πως η ημερομηνία κι ώρα του συστήματός σας είναι σωστές. Αν το ρολόι του υπολογιστή σας πάει λάθος, ενδέχεται να μη λειτουργεί σωστά το glspoints.</translation>
     </message>
 </context>
 </TS>

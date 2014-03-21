@@ -1,4 +1,4 @@
-Name Florincoin
+Name glspoints
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,8 +6,8 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 0.6.3
-!define COMPANY "Florincoin project"
-!define URL http://www.florincoin.org/
+!define COMPANY "glspoints project"
+!define URL http://www.glspoints.org/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/bitcoin.ico"
@@ -19,8 +19,8 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER Florincoin
-!define MUI_FINISHPAGE_RUN $INSTDIR\florincoin-qt.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER glspoints
+!define MUI_FINISHPAGE_RUN $INSTDIR\glspoints-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -45,14 +45,14 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile florincoin-0.6.3-win32-setup.exe
-InstallDir $PROGRAMFILES\Florincoin
+OutFile glspoints-0.6.3-win32-setup.exe
+InstallDir $PROGRAMFILES\glspoints
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion 0.6.3.0
-VIAddVersionKey ProductName Florincoin
+VIAddVersionKey ProductName glspoints
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -66,18 +66,18 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File ../release/florincoin-qt.exe
+    File ../release/glspoints-qt.exe
     File /oname=license.txt ../COPYING
     File /oname=readme.txt ../doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File ../src/florincoind.exe
+    File ../src/glspointsd.exe
     SetOutPath $INSTDIR\src
     File /r /x *.exe /x *.o ../src\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
     # Remove old wxwidgets-based-bitcoin executable and locales:
-    Delete /REBOOTOK $INSTDIR\florincoin.exe
+    Delete /REBOOTOK $INSTDIR\glspoints.exe
     RMDir /r /REBOOTOK $INSTDIR\locale
 SectionEnd
 
@@ -87,8 +87,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Florincoin.lnk" $INSTDIR\florincoin-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall Florincoin.lnk" $INSTDIR\uninstall.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\glspoints.lnk" $INSTDIR\glspoints-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall glspoints.lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "${VERSION}"
@@ -98,10 +98,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "florincoin" "URL Protocol" ""
-    WriteRegStr HKCR "florincoin" "" "URL:Bitcoin"
-    WriteRegStr HKCR "florincoin\DefaultIcon" "" $INSTDIR\florincoin-qt.exe
-    WriteRegStr HKCR "florincoin\shell\open\command" "" '"$INSTDIR\florincoin-qt.exe" "$$1"'
+    WriteRegStr HKCR "glspoints" "URL Protocol" ""
+    WriteRegStr HKCR "glspoints" "" "URL:Bitcoin"
+    WriteRegStr HKCR "glspoints\DefaultIcon" "" $INSTDIR\glspoints-qt.exe
+    WriteRegStr HKCR "glspoints\shell\open\command" "" '"$INSTDIR\glspoints-qt.exe" "$$1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -119,7 +119,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\florincoin-qt.exe
+    Delete /REBOOTOK $INSTDIR\glspoints-qt.exe
     Delete /REBOOTOK $INSTDIR\license.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -129,9 +129,9 @@ SectionEnd
 
 Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall Florincoin.lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Florincoin.lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Florincoin.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall glspoints.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\glspoints.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\glspoints.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -139,7 +139,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "florincoin"
+    DeleteRegKey HKCR "glspoints"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0
