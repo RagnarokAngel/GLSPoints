@@ -30,7 +30,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x09c7781c9df90708e278c35d38ea5c9041d7ecfcdd1c56ba67274b7cff3e1cea");
+uint256 hashGenesisBlock("0x49e5ea0916fbf31a5c9e6376a8179f377f1d67dcb9daa1e138f49bb2e4976966");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // glspoints: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -881,10 +881,10 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     // Genesis block
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
-        
+
     unsigned int nInterval;
     unsigned int nTargetTimespan;
-    
+
     if (pindexLast->nHeight+1 < nHeight_Version2)
     {
         nInterval = nInterval_Version1;
@@ -895,7 +895,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         nInterval = nInterval_Version2;
         nTargetTimespan = nTargetTimespan_Version2;
     }
-        
+
     // Only change once per interval
     if ((pindexLast->nHeight+1) % nInterval != 0)
     {
@@ -2012,16 +2012,16 @@ bool LoadBlockIndex(bool fAllowNew)
     {
         if (!fAllowNew)
             return false;
-  
+
         // Genesis Block:
-		// block.nTime = 1371488396 
-		// block.nNonce = 1000624266
-		// block.GetHash = 09c7781c9df90708e278c35d38ea5c9041d7ecfcdd1c56ba67274b7cff3e1cea
-		// CBlock(hash=09c7781c9df90708e278, PoW=00000dd664a0d447b6b3, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=730f0c8ddc, nTime=1371488396, nBits=1e0ffff0, nNonce=1000112548, vtx=1)
-		//   CTransaction(hash=730f0c8ddc, ver=2, vin.size=1, vout.size=1, nLockTime=0, strTxComment=text:glspoints genesis block)
-		//     CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d010441536c617368646f74202d203137204a756e652032303133202d205361756469204172616269612053657420546f2042616e2057686174734170702c20536b797065)
-		//     CTxOut(nValue=100.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
-		//   vMerkleTree: 730f0c8ddc 
+	   // block.nTime = 1395620128
+                // block.nNonce = 1001615012
+                //  block.GetHash = 49e5ea0916fbf31a5c9e6376a8179f377f1d67dcb9daa1e138f49bb2e4976966
+                //  CBlock(hash=49e5ea0916fbf31a5c9e, PoW=0000057892f112f943c0, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=21f96ee5bc, nTime=1395620128, nBits=1e0ffff0, nNonce=1001615012, vtx=1)
+                //  CTransaction(hash=21f96ee5bc, ver=2, vin.size=1, vout.size=1, nLockTime=0, strTxComment=text:glspoints genesis block)
+                //  CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d01044c5544656d6f63726163794e6f772033202d20323020556b7261696e6520416e6e6f756e636573204372696d6561205769746864726177616c206173205275737369616e204f636375706174696f6e20457870616e6473)
+                //  CTxOut(nValue=100.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
+                //  vMerkleTree: 21f96ee5bc
 
         // Genesis block
         const char* pszTimestamp = "DemocracyNow 3 - 20 Ukraine Announces Crimea Withdrawal as Russian Occupation Expands";
@@ -2037,9 +2037,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1395363413; // 3/20 20:56ish 
+        block.nTime    = 1395620128;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 1000624266;
+        block.nNonce   = 1001615012;
 
         if (fTestNet)
         {
@@ -2054,7 +2054,7 @@ bool LoadBlockIndex(bool fAllowNew)
         assert(block.hashMerkleRoot == uint256("21f96ee5bcf607161acd2a51f3e21a6af39a974de645f3105c0eadf93332f481"));
 
         // If genesis block hash does not match, then generate new genesis hash.
-        if (true && block.GetHash() != hashGenesisBlock)
+        if (false && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
