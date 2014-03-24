@@ -293,10 +293,10 @@ void ThreadIRCSeed2(void* parg)
                 Send(hSocket, strprintf("NICK %s\r", strMyName.c_str()).c_str());
             }
         }
-        
+
         if (fTestNet) {
-            Send(hSocket, "JOIN #flocoinTst\r");
-            Send(hSocket, "WHO #flocoinTst\r");
+            Send(hSocket, "JOIN #glspointsTst\r");
+            Send(hSocket, "WHO #glspointsTst\r");
         } else {
             // randomly join #litecoin00-#litecoin99
             int channel_number = GetRandInt(100);
